@@ -90,7 +90,7 @@ gulp.task('html', html);
 gulp.task('js', js);
 gulp.task('style', css);
 gulp.task('img', image);
-gulp.task('broewserSync', server);
+gulp.task('browserSync', server);
 gulp.task('scss', scss);
 gulp.task('fonts', fonts);
 
