@@ -1,0 +1,23 @@
+@mixin d-f-jc-c-ai-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin d-f-jc-sb-ai-c{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@mixin logo-margin{
+  margin-right: 10px;
+}
+
+@mixin pseudographics{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
