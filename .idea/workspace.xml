@@ -7,19 +7,10 @@
     <list default="true" id="aec2daf2-3e78-44a0-bdef-9f5d4c53a13e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/CSS/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/first section/icon _circle dribble_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle dribble_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/first section/icon _circle facebook_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle facebook_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/first section/icon _circle linkedin_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle linkedin_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/first section/icon _circle twitterbird_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle twitterbird_.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSS/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSS/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/first section/icon _circle dribble_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/first section/icon _circle dribble_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/first section/icon _circle facebook_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/first section/icon _circle facebook_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/first section/icon _circle linkedin_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/first section/icon _circle linkedin_.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/first section/icon _circle twitterbird_.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/first section/icon _circle twitterbird_.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +36,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "First__Block__Slavir23",
+    "git-widget-placeholder": "First__Block__02__Slavir23",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Vento/Desktop/hw2-portfolio-landing-page-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,7 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701877696408</updated>
       <workItem from="1701877697512" duration="3003000" />
-      <workItem from="1701939218569" duration="14025000" />
+      <workItem from="1701939218569" duration="14529000" />
+      <workItem from="1702034031907" duration="6565000" />
     </task>
     <servers />
   </component>

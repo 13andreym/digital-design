@@ -147,12 +147,65 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 121px;
 }
 
+.main__bottom {
+@include d-f-jc-sb-ai-c;
+  padding: 70px 0;
+  @include border-bottom;
+}
+
+.main__bottom--text {
+  width: 1295px;
+  color: $color-primary;
+  font-family: Gilroy Light,sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 0 70px;
+}
+
+.bottom__text--bold {
+  color: $color-primary;
+  font-family: Gilroy,sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.main__bottom--square {
+ @include d-f-f-d-c-a-i-f-e;
+  width: 398px;
+  padding: 60px 70px 60px 0;
+  background: $color-primary;
+
+}
+
+.bottom__square--text {
+  color: $color-third;
+  text-align: right;
+  font-family: Gilroy-Medium,sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 100% */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
 
 
+.main__bottom--logo {
+  @include d-f-jc-c-ai-c;
+}
 
+.bottom__logo--link {
 
+}
 
-
+.bottom__logo--item {
+  width: 50px;
+  margin-left: 30px;
+}
 
 
 
