@@ -58,7 +58,6 @@ h1,h2,h3,h4,h5,h6 {
 //first block///
 
 .container {
-
   max-width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -382,9 +381,7 @@ display: flex;
 .what-i-do{
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid;
   @include border-bottom;
-
 }
 
 .what-i-do__background {
@@ -794,7 +791,6 @@ content: '';
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 
@@ -907,3 +903,107 @@ content: '';
 
   color: $color-third;
 }
+
+
+// contact section
+
+.contact-section {
+  @include border-bottom;
+}
+
+.contact-section__content {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 630px;
+}
+
+.contact-section__title {
+  color: #333;
+  font-family: Gilroy;
+  font-size: 155px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 200px;
+}
+
+.contact-section__subtitle {
+  color: #252525;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.contact-section__text {
+  color: #252525;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+
+.contact-btn {
+  width: 195px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: start;
+  background: #252525;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+}
+
+.contact-btn::after {
+  content: "";
+  background-image: url(../img/contact/arrow.svg);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  width: 21px;
+  height: 13px;
+  right: 15%;
+  top: 35%;
+
+}
+
+// footer
+
+.footer-section {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section_text {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.author-signature {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-icons {
+  padding-right: 10px;}
