@@ -9,7 +9,7 @@
   font-family: "Gilroy";
   src: url(../Fonts/Gilroy-Bold.ttf);
   font-weight: bold;
-  font-style: bold;
+  font-style: Bold;
 }
 
 @font-face {
@@ -58,6 +58,10 @@ h1,h2,h3,h4,h5,h6 {
 //first block///
 
 .container {
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
   max-width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -65,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .first-block {
-  background-color: $bg-color;
+
   width: 100%;
 }
 
@@ -98,7 +102,7 @@ h1,h2,h3,h4,h5,h6 {
   color: $color-secondary;
   text-align: center;
   font-family: Gilroy,sans-serif;
-  font-size: 35px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -110,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
 .logo__text--uppercase {
   color: $color-secondary;
   font-family: Gilroy-Medium,sans-serif;
-  font-size: 35px;
+  font-size: 2em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -122,13 +126,13 @@ h1,h2,h3,h4,h5,h6 {
 .logo__link {
 
   width: 100%;
-  height: 100%;
+
 }
 
 
 
 .menu-btn{
-  display: block;
+  display: flex;
   align-items: center;
   position: absolute;
   top: 40px;
@@ -136,7 +140,8 @@ h1,h2,h3,h4,h5,h6 {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+
 }
 
 .menu-btn > span,
@@ -144,8 +149,6 @@ h1,h2,h3,h4,h5,h6 {
 .menu-btn > span::after {
   display: block;
   position: absolute;
-
-
   transition-duration: .25s;
 }
 .menu-btn > span::before {
@@ -156,12 +159,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .burger--menu {
-  display: flex;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  border: 2px solid #FFF;
+
 }
 
 .burger--title {
@@ -174,6 +172,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+
 
 
 }
@@ -191,8 +190,9 @@ h1,h2,h3,h4,h5,h6 {
   padding: 80px 0;
   list-style: none;
   background-color: $bg-color;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
+  z-index: 1;
 }
 
 
@@ -249,7 +249,7 @@ h1,h2,h3,h4,h5,h6 {
   color: $color-primary;
   text-align: center;
   font-family: Gilroy-SemiBold, sans-serif;
-  font-size: 150px;
+  font-size: 8.5em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -369,7 +369,15 @@ display: flex;
   background: $color-third ;
   border-radius: 50px;
   cursor: pointer;
-  margin: 20px 20px;
+  margin: 20px 0;
+
+  &:nth-child(6)  {
+    width: 100px;
+  }
+
+  &:nth-child(3)  {
+    width: 100px;
+  }
 }
 
 // what-I-do-section_13andreym
@@ -377,15 +385,18 @@ display: flex;
 .what-i-do{
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
+  border-bottom: 1px solid;
+=======
   @include border-bottom;
+>>>>>>> main
 }
 
 .what-i-do__background {
-  background: url(../img/what-i-do/what-i-do-bgd.jpg);
   width: 50%;
   height: 1137px;
   background-size: cover;
-  background-position: center;
+  background: url(../img/what-i-do/what-i-do-bgd.jpg) center;
 }
 
 .what-i-do__content-wrapper{
@@ -433,7 +444,7 @@ color: #000;
 
 .what-i-do__list-text{
   color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -505,6 +516,182 @@ content: '';
   text-transform: uppercase;
 }
 
+
+
+// selected_word_slavir23
+
+
+
+
+.selected__word {
+  @include padding70;
+  @include border-bottom;
+}
+
+
+.selected__word--items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 70px;
+}
+
+.selected__word--title {
+  color: $color-primary;
+  text-align: center;
+  font-family: Gilroy,sans-serif;
+  font-size: 212px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 8.48px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+
+.selected__word--card {
+  display: flex;
+  width: 567px;
+  height: 567px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card__title {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: $color-secondary;
+  font-family: Gilroy-Bold,sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 110% */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card__btn {
+
+
+  @include d-f-jc-c-ai-c;
+  width: 176px;
+  height: 52px;
+
+
+  text-align: center;
+  border-radius: 50px;
+  background: $color-third;
+
+  color: $color-primary;
+
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+
+
+
+
+}
+
+
+.card__btn--black {
+  @include d-f-jc-c-ai-c;
+  width: 176px;
+  height: 52px;
+
+
+  text-align: center;
+  border-radius: 50px;
+  background-color: $color-secondary;
+
+  color: $color-third;
+
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card__link-one {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+}
+
+.card__link--second {
+  position: absolute;
+  top: 85px;
+  left: 220px;
+}
+
+.card__link--three {
+
+
+  position: absolute;
+
+
+  bottom: 20px;
+  right: 20px;
+
+
+}
+
+.card--photo {
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+
+  }
+}
+
+
+
+
+.card--info {
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+
+  }
+}
+
+.selected__work--all {
+  @include d-f-jc-c-ai-c;
+  @include padding70;
+}
+
+.all__btn {
+  display: flex;
+  padding: 15px 60px;
+  align-items: center;
+  border-radius: 50px;
+  background: $color-third;
+}
+
+.all__btn--text {
+  color: $color-primary;
+  font-family: Gilroy-Medium, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
 // my clients section
 
 .clients-section__wrapper{
@@ -542,10 +729,10 @@ content: '';
   .client-cards__logo{
     padding-bottom: 30px;
   }
-  
+
  .client-card__title{
   color: #333;
-    font-family: Gilroy;
+    font-family: Gilroy,sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
@@ -556,7 +743,7 @@ content: '';
 
  .client-card__text{
   color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -613,8 +800,11 @@ content: '';
   margin-right: 20px;
 }
 
-.client-card__signature{
+.client-card__signature {
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
+
+

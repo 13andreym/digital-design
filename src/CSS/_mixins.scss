@@ -36,11 +36,15 @@
 
 @mixin header-2{
   color: #252525;
-    font-family: Gilroy;
+    font-family: Gilroy,sans-serif;
     font-size: 212px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 8.48px;
     text-transform: uppercase;
+}
+
+@mixin padding70 {
+  padding: 70px 0;
 }
