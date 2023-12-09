@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../Fonts/Gilroy-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../Fonts/Gilroy-Bold.ttf);
+    font-weight: bold;
+    font-style: Bold;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../Fonts/Gilroy-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(../Fonts/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+@import "reset";
+@import "variables";
+@import "mixins";
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $bg-color;
+    font-family: 'Gilroy', sans-serif;
+
+
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+//first block///
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header {
+
+    height: 101px;
+
+}
+
+.header__menu {
+    @include d-f-jc-sb-ai-c;
+    width: 100%;
+    height: 100%;
+    border-bottom: #252525 1px solid;
+
+}
+
+.header__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu__logo {
+    @include logo-margin;
+    width: 91px;
+    height: 35px;
+}
+
+.logo__text {
+    color: $color-secondary;
+    text-align: center;
+    font-family: Gilroy, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    text-decoration: none;
+    @include logo-margin;
+}
+
+.logo__text--uppercase {
+    color: $color-secondary;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+
+}
+
+.logo__link {
+
+    width: 100%;
+
+}
+
+
+
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 145px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+    display: block;
+    position: absolute;
+    transition-duration: .25s;
+}
+
+.menu-btn>span::before {}
+
+.menu-btn>span::after {}
+
+.burger--menu {}
+
+.burger--title {
+
+    color: $color-primary;
+    text-align: center;
+    font-family: Gilroy-SemiBold, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+
+
+}
+
+
+.menubox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: $bg-color;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 1;
+}
+
+
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: $color-primary;
+    font-family: Manrope, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+
+    &:hover {
+        background-color: rgba(49, 46, 46, 0.6);
+        color: $bg-color;
+    }
+
+}
+
+
+
+
+#menu-toggle {
+    opacity: 0;
+}
+
+
+
+#menu-toggle:checked~.menu-btn>span {}
+
+#menu-toggle:checked~.menu-btn>span::before {}
+
+#menu-toggle:checked~.menu-btn>span::after {}
+
+#menu-toggle:checked~.menubox {
+    visibility: visible;
+    right: 0;
+}
+
+
+
+
+
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    color: #252525;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 9px;
+        text-transform: uppercase;
+}
+
+h3{
+    color: #333;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+}
+
+p{
+    padding-top: 50px;
+    color: #252525;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+// footer
+
+.footer-section {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #252525;
+}
+
+.footer-section_text {
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 50px;
+}
+
+.author-signature {
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-icons {
+    padding-right: 10px;
+}

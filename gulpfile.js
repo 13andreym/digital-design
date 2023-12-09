@@ -16,6 +16,15 @@ const html = () => {
     );
 };
 
+const pages = () => {
+    return gulp.src('./src/members-pages/*.html')
+       .pipe(htmlMin({ collapseWhitespace: true}))
+        .pipe(gulp.dest('./dist/members-pages')
+    );
+}
+
+
+
 const js = () => {
     return gulp.src('./src/JS/**/*.js')
         .pipe(concat('script.js'))
@@ -45,6 +54,14 @@ const scss = () => {
         .pipe(gulp.dest('./dist/CSS'));
 }
 
+const membersStyles = () => {
+    return gulp.src('./src/members-pages/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('styles-members.css'))
+         .pipe(cleanCss({compatibility: 'ie8'}))
+        .pipe(gulp.dest('./dist/members-pages'));
+}
+
 
 const fonts = () => {
     return gulp.src('./src/Fonts/**/*.*')
@@ -60,9 +77,10 @@ const cleanDist = () => {
 const watcher = () => {
     gulp.watch('./src/**/*.html', html).on('all', browserSync.reload);
     gulp.watch('./src/CSS/**/*.{scss, sass, css}', scss).on('all', browserSync.reload);
+    gulp.watch('./src/members-pages/**/*.{scss, sass, css}', membersStyles).on('all', browserSync.reload);
     gulp.watch('./src/JS/**/*.js', js).on('all', browserSync.reload);
     gulp.watch('./src/Fonts/**/*.*', fonts).on('all', browserSync.reload);
-
+    gulp.watch('./src/members-pages/*.html', pages).on('all', browserSync.reload);
     // gulp.watch('./src/img/**/*.*', image).on('all', browserSync.reload);
 };
 
@@ -86,6 +104,9 @@ const image = () => {
     .pipe(gulp.dest('./dist/img'))
 }
 
+
+
+
 gulp.task('html', html);
 gulp.task('js', js);
 gulp.task('style', css);
@@ -93,19 +114,21 @@ gulp.task('img', image);
 gulp.task('browserSync', server);
 gulp.task('scss', scss);
 gulp.task('fonts', fonts);
+gulp.task('pages', pages);
+gulp.task('membersStyles', membersStyles);
 
 
 // gulp.task('build', gulp.series(cleanDist, html, css, js));
 
 gulp.task('build', gulp.series(
     cleanDist,
-    gulp.parallel(html, scss, js, image, fonts)
+    gulp.parallel(html, scss, js, image, fonts, pages, membersStyles)
 ));
 
 
 // gulp.task('dev', gulp.parallel(html, css, js, watcher));
 
 gulp.task('dev', gulp.series(
-    gulp.parallel(html, scss, js, image,fonts),
+    gulp.parallel(html, scss, js, image, fonts, pages, membersStyles),
     gulp.parallel(server, watcher)
 ));
