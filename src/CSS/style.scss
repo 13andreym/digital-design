@@ -58,7 +58,10 @@ h1,h2,h3,h4,h5,h6 {
 //first block///
 
 .container {
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
   max-width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -382,7 +385,11 @@ display: flex;
 .what-i-do{
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   border-bottom: 1px solid;
+=======
+  @include border-bottom;
+>>>>>>> main
 }
 
 .what-i-do__background {
@@ -510,6 +517,7 @@ content: '';
 }
 
 
+
 // selected_word_slavir23
 
 
@@ -601,7 +609,7 @@ content: '';
 
   text-align: center;
   border-radius: 50px;
-  background: $color-secondary;
+  background-color: $color-secondary;
 
   color: $color-third;
 
@@ -676,9 +684,127 @@ content: '';
 
 .all__btn--text {
   color: $color-primary;
-  font-family: Gilroy-Medium,sans-serif;
+  font-family: Gilroy-Medium, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
 }
+
+// my clients section
+
+.clients-section__wrapper{
+  @include border-bottom;
+}
+
+.clients-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.clients-section-title{
+  @include header-2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.clients-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.client-card{
+  width: 507px;
+  height: 480px;
+  text-align: start;
+  padding: 30px;
+
+  .client-cards__logo{
+    padding-bottom: 30px;
+  }
+
+ .client-card__title{
+  color: #333;
+    font-family: Gilroy,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+    padding-bottom: 30px;
+    /* 110% */
+ }
+
+ .client-card__text{
+  color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 30px;
+    /* 150% */
+ }
+.client-card__name{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 10px;
+    /* 100% */
+}
+
+.client-card__job{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+}
+
+.client-cards__logo--padding-bottom{
+  padding-bottom: 43px;
+}
+
+}
+
+.client-card__borders--right-bottom{
+    border-bottom: 1px solid #252525;
+      border-right: 1px solid #252525;
+}
+
+.client-card__borders--bottom{
+  border-bottom: 1px solid #252525;
+}
+
+.client-card__borders--left-right{
+  border-left: 1px solid #252525;
+    border-right: 1px solid #252525;
+}
+
+.client-card__photo-wrapper{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.client-card__signature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+
