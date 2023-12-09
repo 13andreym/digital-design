@@ -1,14 +1,31 @@
 @font-face {
   font-family: "Gilroy";
-  src: url(../Fonts/Gilroy-Bold.ttf);
   src: url(../Fonts/Gilroy-Regular.ttf);
-  src: url(../Fonts/Gilroy-Medium.ttf);
-  src: url(../Fonts/Gilroy-Light.ttf);
-  src: url(../Fonts/Gilroy-Black.ttf);
-  src: url(../Fonts/Gilroy-Thin.ttf);
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../Fonts/Gilroy-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../Fonts/Gilroy-Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../Fonts/Gilroy-SemiBold.ttf);
+font-weight: 600;
+  font-style: normal;
+}
+
 
 
 
@@ -21,7 +38,8 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
+background-color: $bg-color;
+font-family: 'Gilroy', sans-serif;
 
 
 }
@@ -355,3 +373,135 @@ display: flex;
   margin: 20px 20px;
 }
 
+// what-I-do-section_13andreym
+
+.what-i-do{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px sol;
+}
+
+.what-i-do__background {
+  background: url(../img/what-i-do/what-i-do-bgd.jpg);
+  width: 50%;
+  height: 1137px;
+  background-size: cover;
+  background-position: center;
+}
+
+.what-i-do__content-wrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  height: 1137px;
+
+
+}
+
+.what-i-do__content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.what-i-do__title{
+  color: #252525;
+    font-family: Gilroy;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    padding-top: 70px;
+}
+
+
+.what-i-do__list-item__title{
+color: #000;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+
+.what-i-do__list-text{
+  color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+.what-i-do__list-decoration::before{
+content: '';
+  /* Обязательное свойство для псевдоэлемента */
+  position: absolute;
+  /* Позиционируем псевдоэлемент абсолютно относительно родителя */
+  bottom: 0;
+  /* Размещаем полосу внизу элемента */
+  left: 0;
+  /* Выравниваем полосу по левому краю элемента */
+  width: 100%;
+  /* Растягиваем полосу на всю ширину элемента */
+  height: 1px;
+  /* Задаем высоту полосы */
+  background-color: #252525;
+  margin-bottom: -40px;
+}
+
+
+.list-item__title__digital::before{
+  content: '01 ';
+  color: #000;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 109.091% */
+    text-transform: uppercase;
+}
+
+.list-item__title__art::before {
+  content: '02 ';
+  color: #000;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  /* 109.091% */
+  text-transform: uppercase;
+}
+
+.list-item__title__interaction::before {
+  content: '03 ';
+  color: #000;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  /* 109.091% */
+  text-transform: uppercase;
+}
+
+.list-item__title__motion::before {
+  content: '04 ';
+  color: #000;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  /* 109.091% */
+  text-transform: uppercase;
+}
