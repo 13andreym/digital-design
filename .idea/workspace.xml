@@ -4,7 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec2daf2-3e78-44a0-bdef-9f5d4c53a13e" name="Changes" comment="" />
+    <list default="true" id="aec2daf2-3e78-44a0-bdef-9f5d4c53a13e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Heavy.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-HeavyItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-RegularItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Fonts/Gilroy-UltraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/JS/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/JS/script.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (10).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (11).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (12).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (13).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (7).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (8).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Bottom Logo/icon (9).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (2).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (3).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (4).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (5).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon (6).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/Logo section/icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/clients/client-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/Hero photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle dribble_.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle facebook_.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle linkedin_.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/first section/icon _circle twitterbird_.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/selected_word/Frame 7 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/selected_word/Frame 7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/selected_word/Frame 8 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/selected_word/Frame 8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/what-i-do/what-i-do-bgd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSS/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSS/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSS/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,25 +90,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Our__Team__Section__Slavir23",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Vento/Desktop/hw2-portfolio-landing-page-main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Our__Team__Section__Slavir23&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vento/Desktop/hw2-portfolio-landing-page-main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
