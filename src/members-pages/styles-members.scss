@@ -61,8 +61,6 @@ h6 {
 }
 
 
-//first block///
-
 .container {
     max-width: 90%;
     margin: 0 auto;
@@ -80,7 +78,6 @@ h6 {
     @include d-f-jc-sb-ai-c;
     width: 100%;
     height: 100%;
-    border-bottom: #252525 1px solid;
 
 }
 
@@ -166,9 +163,6 @@ h6 {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-
-
-
 }
 
 
@@ -207,9 +201,6 @@ h6 {
 
 }
 
-
-
-
 #menu-toggle {
     opacity: 0;
 }
@@ -226,11 +217,6 @@ h6 {
     visibility: visible;
     right: 0;
 }
-
-
-
-
-
 
 .member-card {
     display: flex;
@@ -277,7 +263,6 @@ p{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    border-top: 1px solid #252525;
 }
 
 .footer-section_text {
@@ -299,4 +284,116 @@ p{
 
 .footer-icons {
     padding-right: 10px;
+}
+
+
+@media screen and (min-width: 748px) and (max-width: 1200px) {
+
+h2{
+    
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p {
+    
+    color: #252525;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.member-card{
+height: auto;
+}
+
+    .footer-section {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .footer-section_text {
+        color: #333;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .author-signature {
+        color: #333;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer-icons {
+        padding-right: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 748px) {
+
+    .logo__text {
+        display: none;
+    }
+
+    .logo__text--uppercase {
+        display: none;
+    }
+
+    .menu-btn {
+        right: 70px;
+    }
+
+
+
+
+    .footer-section {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-section_text {
+        color: #333;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .author-signature {
+        color: #333;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .footer-icons {
+
+        margin: auto;
+
+    }
+
+
 }
