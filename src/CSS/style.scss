@@ -55,7 +55,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-//first block///
 
 .container {
   max-width: 90%;
@@ -318,7 +317,7 @@ display: flex;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 100% */
+  line-height: 32px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -344,8 +343,6 @@ display: flex;
 .partners__list {
   width: 100%;
   display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: row;
   justify-content: space-between;
   padding: 70px 0;
 }
@@ -376,7 +373,6 @@ display: flex;
   }
 }
 
-// what-I-do-section_13andreym
 
 .what-i-do{
   display: flex;
@@ -386,16 +382,19 @@ display: flex;
 
 .what-i-do__background {
   width: 50%;
-  //height: 1137px;
+  height: auto;
   background-size: cover;
   background: url(../img/what-i-do/what-i-do-bgd.jpg) center;
+}
+
+.what-i-do__img{
+  display: none;
 }
 
 .what-i-do__content-wrapper{
   width: 50%;
   display: flex;
   flex-direction: row;
-  //height: 1137px;
 
 
 }
@@ -448,17 +447,11 @@ color: #000;
 
 .what-i-do__list-decoration::before{
 content: '';
-  /* Обязательное свойство для псевдоэлемента */
   position: absolute;
-  /* Позиционируем псевдоэлемент абсолютно относительно родителя */
   bottom: 0;
-  /* Размещаем полосу внизу элемента */
   left: 0;
-  /* Выравниваем полосу по левому краю элемента */
   width: 100%;
-  /* Растягиваем полосу на всю ширину элемента */
   height: 1px;
-  /* Задаем высоту полосы */
   background-color: #252525;
   margin-bottom: -40px;
 }
@@ -471,7 +464,6 @@ content: '';
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
-    /* 109.091% */
     text-transform: uppercase;
 }
 
@@ -482,7 +474,6 @@ content: '';
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  /* 109.091% */
   text-transform: uppercase;
 }
 
@@ -493,7 +484,6 @@ content: '';
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  /* 109.091% */
   text-transform: uppercase;
 }
 
@@ -504,17 +494,12 @@ content: '';
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  /* 109.091% */
   text-transform: uppercase;
 }
 
 .card__info--square {
   display: none;
 }
-
-// selected_word_slavir23
-
-
 
 
 .selected__word {
@@ -563,7 +548,7 @@ content: '';
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px; /* 110% */
+  line-height: 44px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -681,7 +666,6 @@ content: '';
 
 }
 
-// my clients section
 
 .clients-section__wrapper{
   @include border-bottom;
@@ -727,7 +711,6 @@ content: '';
     font-weight: 800;
     line-height: 44px;
     padding-bottom: 30px;
-    /* 110% */
  }
 
  .client-card__text{
@@ -738,7 +721,6 @@ content: '';
     font-weight: 400;
     line-height: 30px;
     padding-bottom: 30px;
-    /* 150% */
  }
 .client-card__name{
   color: #000;
@@ -748,7 +730,6 @@ content: '';
     font-weight: 600;
     line-height: 20px;
     padding-bottom: 10px;
-    /* 100% */
 }
 
 .client-card__job{
@@ -758,7 +739,6 @@ content: '';
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* 100% */
 }
 
 .client-cards__logo--padding-bottom{
@@ -796,20 +776,12 @@ content: '';
 }
 
 
-//our team//
 
 .our__team {
   @include padding70;
   @include border-bottom;
 }
 
-//.our__team--list {
-//  width: 100%;
-//  display: flex;
-//  flex-wrap: wrap;
-//  flex-direction: row;
-//  justify-content: flex-start;
-//}
 
 .our__team--list {
 display: grid;
@@ -918,8 +890,6 @@ display: grid;
 }
 
 
-// contact section
-
 .contact-section {
   @include padding70;
   @include border-bottom;
@@ -927,11 +897,11 @@ display: grid;
 }
 
 .contact-section__content {
-  padding-top: 100px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  //height: 630px;
+  padding-bottom: 50px;
 }
 
 .contact-section__title {
@@ -995,7 +965,6 @@ display: grid;
 
 }
 
-// footer
 
 .footer-section {
   height: 80px;
@@ -1026,10 +995,7 @@ display: grid;
 
 
 
-//adaptation//
-
-
-@media screen and (min-width: 748px) and (max-width: 1780px) {
+@media screen and (min-width: 748px) and (max-width: 1200px) {
 
   .main-subtitle {
     font-size: 6em;
@@ -1071,7 +1037,7 @@ display: grid;
 
 
   .selected__word--title {
-    font-size: 150px;
+    font-size: 8em;
   }
 
 
@@ -1120,7 +1086,7 @@ display: grid;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 44px; /* 110% */
+    line-height: 44px;
     text-transform: uppercase;
     margin-bottom: 50px;
   }
@@ -1169,205 +1135,196 @@ display: grid;
   }
 
   .our__team--list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 40px;
-    grid-row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
   }
 
-  //.our__team--description {
-  //  display: flex;
-  //
-  //  width: 100%;
-  //}
 
+
+.what-i-do {
+  display: flex;
+  flex-direction: column;
+}
+
+.what-i-do__background {
+  display: none;
+}
+
+.what-i-do__img {
+  display: block;
+
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.what-i-do__content-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+
+
+.what-i-do__title {
+  font-size: 100px;
 }
 
 
 
 
-//////////////////////////////////////////////////////////////////////////////////
+
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.clients-section-title {
+  @include header-2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 6em;
+}
+
+.clients-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.client-card {
+  width: auto;
+  text-align: start;
+  padding: 30px;
 
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  // what-I-do-section_13andreym
-
-  .what-i-do {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .what-i-do__background {
-    width: 50%;
-    height: auto;
-    background-size: cover;
-    background: url(../img/what-i-do/what-i-do-bgd.jpg) center;
-  }
-
-  .what-i-do__content-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-
-  }
-
-
-
-  // my clients section
-
-
-
-  .clients-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .clients-section-title {
-    @include header-2;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 7em;
-  }
-
-  .clients-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-  }
-
-  .client-card {
-    width: auto;
-    text-align: start;
-    padding: 30px;
-
-
-
-  }
-
-  .client-card__borders--right-bottom {
-    border-bottom: 1px solid #252525;
-    border-right: none;
-  }
-
-  .client-card__borders--bottom {
-    border-bottom: 1px solid #252525;
-  }
-
-  .client-card__borders--left-right {
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #252525;
-  }
-
-  .cameron-card{
-    border-bottom: 1px solid #252525;
-  }
-
-
-  // contact section
-
-  .contact-section__content {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-
-  .contact-section__title {
-    margin: auto;
-  }
-
-  .contact-section__subtitle {
-    color: #252525;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-  }
-
-  .contact-section__text {
-    color: #252525;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 30px;
-  }
-
-  .contact-btn {
-    width: 195px;
-    height: 50px;
-    border-radius: 50px;
-    text-align: start;
-    background: #252525;
-    color: #fff;
-    padding-left: 20px;
-    position: relative;
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-    border: none;
-  }
-
-  .contact-btn::after {
-    content: "";
-    background-image: url(../img/contact/arrow.svg);
-    position: absolute;
-    display: block;
-    background-size: cover;
-    width: 21px;
-    height: 13px;
-    right: 15%;
-    top: 35%;
-
-  }
-
-  // footer
-
-  .footer-section {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-section_text {
-    color: #333;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .author-signature {
-    color: #333;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .footer-icons {
-    padding-right: 10px;
-  }
 
 }
 
+.client-card__borders--right-bottom {
+  border-bottom: 1px solid #252525;
+  border-right: none;
+}
+
+.client-card__borders--bottom {
+  border-bottom: 1px solid #252525;
+}
+
+.client-card__borders--left-right {
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #252525;
+}
+
+.cameron-card {
+  border-bottom: 1px solid #252525;
+}
+
+
+
+.contact-section__content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact-section__title {
+  margin: auto;
+  font-size: 8em;
+}
+
+.contact-section__subtitle {
+  color: #252525;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.contact-section__text {
+  color: #252525;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 30px;
+}
+
+.contact-btn {
+  width: 195px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: start;
+  background: #252525;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+}
+
+.contact-btn::after {
+  content: "";
+  background-image: url(../img/contact/arrow.svg);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  width: 21px;
+  height: 13px;
+  right: 15%;
+  top: 35%;
+
+}
+
+
+.footer-section {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section_text {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.author-signature {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer-icons {
+  padding-right: 10px;
+}
+
+}
 
 
 
@@ -1424,7 +1381,6 @@ display: grid;
   }
 
 
-
   .main__bottom{
     display: flex;
     flex-wrap: wrap;
@@ -1437,9 +1393,6 @@ display: grid;
     justify-content: center;
   }
 
-
-
-
   .selected__word--title {
     font-size: 55px;
   }
@@ -1449,11 +1402,6 @@ display: grid;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
-
-
-
-
 
   }
 
@@ -1467,10 +1415,6 @@ display: grid;
     &:nth-child(6) {
       display: none;
     }
-
-
-
-
 
   }
 
@@ -1498,7 +1442,7 @@ display: grid;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 44px; /* 110% */
+    line-height: 44px;
     text-transform: uppercase;
     margin-bottom: 50px;
   }
@@ -1535,9 +1479,6 @@ display: grid;
     font-weight: 400;
     line-height: normal;
 
-    margin-top: 10px;
-
-
   }
 
   .card__info--block {
@@ -1568,12 +1509,12 @@ display: grid;
 
 
 
-  .our__team--list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-
-  }
+    .our__team--list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
 
   .team--soc {
 
@@ -1589,215 +1530,193 @@ display: grid;
     width: 230px;
   }
 
+
+.what-i-do {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+}
+
+.what-i-do__title {
+  @include header-2;
+  font-size: 6em;
+  text-align: center;
+}
+
+.what-i-do__background {
+  display: none;
+}
+
+.what-i-do__img {
+  display: block;
+  height: 478px;
+  width: auto;
+  overflow: hidden;
+  margin: 0;
+}
+
+.what-i-do__content-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+
+}
+
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.clients-section-title {
+  @include header-2;
+  font-size: 5em;
 }
 
 
+.clients-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  width: 100%;
+}
 
-
-//////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-@media screen and (min-width: 320px) and (max-width: 768px){
-  // what-I-do-section_13andreym
-
-
-
-
-  .what-i-do {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-
-  }
-
-  .what-i-do__title {
-    font-size: 7em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    text-align: center;
-
-
-  }
-
-  .what-i-do__background {
-    width: 50%;
-    height: auto;
-    background-size: cover;
-    background: url(../img/what-i-do/what-i-do-bgd.jpg) center;
-  }
-
-  .what-i-do__content-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-
-  }
+.client-card {
+  width: auto;
+  text-align: start;
+  padding: 30px;
 
 
 
-  my clients section
+}
+
+.client-card__borders--right-bottom {
+  border-bottom: 1px solid #252525;
+  border-right: none;
+}
+
+.client-card__borders--bottom {
+  border-bottom: 1px solid #252525;
+}
+
+.client-card__borders--left-right {
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #252525;
+}
+
+.cameron-card {
+  border-bottom: 1px solid #252525;
+}
 
 
+.contact-section__content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
 
-  .clients-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+.contact-section__title {
+  margin: auto;
+  font-size: 5em;
+  text-align: center;
+}
 
-  .clients-section-title {
-    @include header-2;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 6em;
-    width: auto;
-  }
+.contact-section__subtitle {
+  color: #252525;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
-  .clients-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
-    width: 100vh;
-  }
+.contact-section__text {
+  color: #252525;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 30px;
+}
 
-  .client-card {
-    width: auto;
-    text-align: start;
-    padding: 30px;
+.contact-btn {
+  width: 195px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: start;
+  background: #252525;
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+}
+
+.contact-btn::after {
+  content: "";
+  background-image: url(../img/contact/arrow.svg);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  width: 21px;
+  height: 13px;
+  right: 15%;
+  top: 35%;
+
+}
 
 
+.footer-section {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  }
+.footer-section_text {
+  color: #333;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-  .client-card__borders--right-bottom {
-    border-bottom: 1px solid #252525;
-    border-right: none;
-  }
+.author-signature {
+  color: #333;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
-  .client-card__borders--bottom {
-    border-bottom: 1px solid #252525;
-  }
+.footer-icons {
 
-  .client-card__borders--left-right {
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #252525;
-  }
+  margin: auto;
 
-  .cameron-card {
-    border-bottom: 1px solid #252525;
-  }
-
-
-  // contact section
-
-  .contact-section__content {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 50px;
-  }
-
-  .contact-section__title {
-    margin: auto;
-    font-size: 6em;
-    text-align: center;
-  }
-
-  .contact-section__subtitle {
-    color: #252525;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  .contact-section__text {
-    color: #252525;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-bottom: 30px;
-  }
-
-  .contact-btn {
-    width: 195px;
-    height: 50px;
-    border-radius: 50px;
-    text-align: start;
-    background: #252525;
-    color: #fff;
-    padding-left: 20px;
-    position: relative;
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-    border: none;
-  }
-
-  .contact-btn::after {
-    content: "";
-    background-image: url(../img/contact/arrow.svg);
-    position: absolute;
-    display: block;
-    background-size: cover;
-    width: 21px;
-    height: 13px;
-    right: 15%;
-    top: 35%;
-
-  }
-
-  // footer
-
-  .footer-section {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-section_text {
-    color: #333;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .author-signature {
-    color: #333;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .footer-icons {
-
-    margin: auto;
-
-  }
+}
 
 
 }
